@@ -1,0 +1,23 @@
+/*Append String*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char s1[100],s2[10];
+    int len1=0,len2=0,i,j;
+    printf("Enter first string : ");
+    fflush(stdin);
+    gets(s1);
+    printf("Enter second string : ");
+    fflush(stdin);
+    gets(s2);
+    while(s1[len1]!='\0')
+    len1++;
+    while(s2[len2]!='\0')
+    len2++;
+    len1=strlen(s1);
+    len2=strlen(s2);
+    for(j=0,i=len1;j<=len2;i++,j++)
+    s1[i]=s2[j];
+    printf("Append String : %s",s1);
+}
